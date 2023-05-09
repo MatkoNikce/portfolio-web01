@@ -20,19 +20,19 @@ function App() {
     <ChakraProvider>
       <div className="App" >
 
-        <Box bg='#1D1D1D' color='white' p={8}>
+        <Box bg='#1D1D1D' color='white' p={8} fontSize={{ base: '5px', md: '8px', '2xl': '13px' }}>
 
 
 
 
 
-          <Flex marginBottom={100} id='inicio'>
+          <Flex marginBottom={100} id='inicio' >
             <Spacer>
-              <Breadcrumb fontSize={12} separator=''>
+              <Breadcrumb fontSize={12} separator='' fontSize={{ base: '5px', md: '8px', '2xl': '13px' }}>
 
                 <Spacer>
 
-                  <BreadcrumbItem margin={5} >
+                  <BreadcrumbItem margin={5}  >
                     <BreadcrumbLink href='#acercaDe'>ACERCA DE</BreadcrumbLink>
                   </BreadcrumbItem>
 
@@ -86,24 +86,31 @@ function App() {
               <Flex direction={'row'} maxH={'sm'} alignItems={'flex-start'}>
                 <Box>
 
-                  <Heading fontSize={150} marginLeft={10} id='acercaDe'>MATK</Heading>
+                  <Heading fontSize={{ base: '50px', md: '100px', '2xl': '150px' }} marginLeft={10} id='acercaDe'>MATK</Heading>
 
                 </Box>
 
                 <Box  >
 
-                <Image src='/src/assets/img/HablemosEspañol.png' alt='Matko' objectFit={'cover'} boxSize={200} borderRadius={'full'} border={2} borderColor={'blackAlpha.100'} />
+                  <Image src='/src/assets/img/HablemosEspañol.png' alt='Matko' objectFit={'cover'} boxSize={{ base: '50px', md: '100px', '2xl': '150px' }} borderRadius={'full'} border={2} borderColor={'blackAlpha.100'} />
 
                 </Box>
                 <Box>
 
-                  <Text w={300} fontSize={13}>Soy un programador Junior en Desarrollo Web, tengo años de auto educación y recientemente comencé a formarme con cursos certificados en la Universidad Tecnológica Nacional, con el propósito de afianzar mis conocimientos y convertirme en un profesional.</Text>
+                  <Text w={300} fontSize={{ base: '5px', md: '8px', '2xl': '13px', }}
+                    width={[
+                      '100%', // 0-30em
+                      '50%', // 30em-48em
+                      '25%', // 48em-62em
+                      '15%', // 62em+
+                    ]}
+                  >Soy un programador Junior en Desarrollo Web, tengo años de auto educación y recientemente comencé a formarme con cursos certificados en la Universidad Tecnológica Nacional, con el propósito de afianzar mis conocimientos y convertirme en un profesional.</Text>
 
                 </Box>
               </Flex>
             </Box>
 
-            <Heading fontSize={150} marginLeft={10} >NIKCEVICH</Heading>
+            <Heading fontSize={{ base: '50px', md: '100px', '2xl': '150px' }} marginLeft={10} >NIKCEVICH</Heading>
           </Flex>
 
 
@@ -113,7 +120,14 @@ function App() {
               <Text id='educacion'>Educación</Text>
             </Spacer>
             <Spacer>
-              <Text w={400} fontSize={20}>
+              <Text w={400} fontSize={{ base: '10px', md: '15px', '2xl': '20px', }}
+                width={[
+                  '100%', // 0-30em
+                  '100%', // 30em-48em
+                  '100%', // 48em-62em
+                  '100%', // 62em+
+                ]}
+              >
                 Con el paso de los años me convertí en una persona capaz de trabajar en grupos, eficaz y trabajadora, con un sentimiento de dedicación hacia lo que hago, que me permite lograrlo sea lo difícil que sea, y me lleve cuanto tiempo me lleve.
               </Text>
             </Spacer>
@@ -154,7 +168,7 @@ function App() {
           </Flex>
 
 
-          <Heading fontSize={150} id='habilidades'>HABILIDADES</Heading>
+          <Heading fontSize={{ base: '50px', md: '100px', '2xl': '150px' }} id='habilidades'>HABILIDADES</Heading>
           <Flex justifyContent={'space-between'}>
             <Flex flexDirection={'column'} w={500}>
               <Text color={'#434343'}>Habilidades blandas</Text>
@@ -175,20 +189,20 @@ function App() {
               <Text>Javascript/React.js</Text>
             </Flex>
           </Flex>
-          <Image src='/src/assets/img/matko.jpg' alt='Matko' borderRadius={10} />
+          <Image src='/src/assets/img/matko.jpg' alt='Matko' borderRadius={10} boxSize={{}} />
 
-          <Heading fontSize={150} id='testimonios' mb={10}>TESTIMONIOS</Heading>
+          <Heading fontSize={{ base: '50px', md: '100px', '2xl': '150px' }} id='testimonios' mb={10}>TESTIMONIOS</Heading>
           <Flex justifyContent={'space-between'}>
 
             <Card maxW='sm'>
               <CardBody>
-              <Image
+                <Image
                   src='/src/assets/img/sophi.jpg'
                   alt='Sophia Aguilar'
                   borderRadius='lg'
                   maxH={500}
                 />
-                
+
                 <Stack mt='6' spacing='3'>
                   <Heading size='md'>Sophia Aguilar</Heading>
                   <Text>
@@ -201,7 +215,7 @@ function App() {
             </Card>
             <Card maxW='sm'>
               <CardBody>
-              <Image
+                <Image
                   src='/src/assets/img/madre.jpg'
                   alt='Sophia Aguilar'
                   borderRadius='lg'
@@ -219,7 +233,7 @@ function App() {
             </Card>
             <Card maxW='sm'>
               <CardBody>
-              <Image
+                <Image
                   src='/src/assets/img/padre.jpg'
                   alt='Sophia Aguilar'
                   borderRadius='lg'
@@ -242,7 +256,7 @@ function App() {
           <Flex flexDirection={'column'} alignItems={'center'} mt={10}>
 
             <Text color={'#434343'} id='contacto'>Contáctame</Text>
-            <Heading fontSize={50} mb={10} color={'#434343'}>MATKONIKCE@GMAIL.COM</Heading>
+            <Heading fontSize={{ base: '20px', md: '30px', '2xl': '50px' }} mb={10} color={'#434343'}>MATKONIKCE@GMAIL.COM</Heading>
 
           </Flex>
 
@@ -274,17 +288,23 @@ function App() {
 
             <Flex >
 
-              <Stack direction={'row'}>
+              <Stack direction={'row'} >
 
                 <Link href='https://discord.com/users/Overnite#7484' isExternal>
-                  <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>Discord</Button>
+                  <Button colorScheme='#1D1D1D' variant='outline' size={'sm'} borderRadius={20} _hover={{ bg: 'gray' }}
+                    fontSize={{ base: '5px', md: '8px', '2xl': '13px' }}>
+                    Discord</Button>
                 </Link>
                 <Link href='https://github.com/MatkoNikce' isExternal>
-                  <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>GitHub</Button>
+                  <Button colorScheme='#1D1D1D' variant='outline' size={'sm'} borderRadius={20} _hover={{ bg: 'gray' }}
+                    fontSize={{ base: '5px', md: '8px', '2xl': '13px' }}
+                  >GitHub</Button>
                 </Link>
 
                 <Link href='https://www.linkedin.com/in/matko-nikcevich-b47942258/' isExternal>
-                  <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>LinkedIn</Button>
+                  <Button colorScheme='#1D1D1D' variant='outline' size={'sm'} borderRadius={20} _hover={{ bg: 'gray' }}
+                  fontSize={{base:'5px', md:'8px', '2xl': '13px'}}
+                  >LinkedIn</Button>
                 </Link>
               </Stack>
 
