@@ -92,7 +92,7 @@ function App() {
 
                 <Box  >
 
-                  <Image src='/src/assets/img/HablemosEspañol.png' alt='Matko' objectFit={'cover'} boxSize={{ base: '50px', md: '100px', '2xl': '150px' }} borderRadius={'full'} border={2} borderColor={'blackAlpha.100'} />
+                  <Image src='/img/HablemosEspañol.png' alt='Matko' objectFit={'cover'} boxSize={{ base: '50px', md: '100px', '2xl': '150px' }} borderRadius={'full'} border={2} borderColor={'blackAlpha.100'} />
 
                 </Box>
                 <Box>
@@ -189,7 +189,7 @@ function App() {
               <Text>Javascript/React.js</Text>
             </Flex>
           </Flex>
-          <Image src='/src/assets/img/matko.jpg' alt='Matko' borderRadius={10} boxSize={{}} />
+          <Image src='/img/matko.jpg' alt='Matko' borderRadius={10} />
 
           <Heading fontSize={{ base: '50px', md: '100px', '2xl': '150px' }} id='testimonios' mb={10}>TESTIMONIOS</Heading>
           <Flex justifyContent={'space-between'}>
@@ -197,7 +197,7 @@ function App() {
             <Card maxW='sm'>
               <CardBody>
                 <Image
-                  src='/src/assets/img/sophi.jpg'
+                  src='/img/sophi.jpg'
                   alt='Sophia Aguilar'
                   borderRadius='lg'
                   maxH={500}
@@ -216,7 +216,7 @@ function App() {
             <Card maxW='sm'>
               <CardBody>
                 <Image
-                  src='/src/assets/img/madre.jpg'
+                  src='/img/madre.jpg'
                   alt='Sophia Aguilar'
                   borderRadius='lg'
                   maxH={500}
@@ -224,7 +224,7 @@ function App() {
                 <Stack mt='6' spacing='3'>
                   <Heading size='md'>Mónica Magallanes</Heading>
                   <Text>
-                    "Considero a mi hijo como una gran persona, empática, llena de sueños y con muchas ganas de aprender. Logró todo lo que se propuso durante toda su vida debido a su gran dedicación, y estoy segura que podrá lograr todo lo que se dedique con su pasión por el desarrollo web."
+                    "Considero a Matko como una gran persona, empática, llena de sueños y con muchas ganas de aprender. Logró todo lo que se propuso durante toda su vida debido a su gran dedicación, y estoy segura que podrá lograr todo lo que se dedique con su pasión por el desarrollo web."
                   </Text>
 
                 </Stack>
@@ -234,7 +234,7 @@ function App() {
             <Card maxW='sm'>
               <CardBody>
                 <Image
-                  src='/src/assets/img/padre.jpg'
+                  src='/img/padre.jpg'
                   alt='Sophia Aguilar'
                   borderRadius='lg'
                   maxH={500}
