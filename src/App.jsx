@@ -260,7 +260,7 @@ function App() {
 
           </Flex>
 
-          <AppForm />
+          <AppForm/>
 
 
 

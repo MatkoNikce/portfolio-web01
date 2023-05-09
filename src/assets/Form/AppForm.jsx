@@ -1,8 +1,10 @@
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import { Heading, Text, Box, Image, Wrap, WrapItem, AbsoluteCenter, Divider, Button, ChakraProvider, Flex, Spacer} from '@chakra-ui/react'
+import '../../App.css'
 
 function AppForm() {
     return (
+        <ChakraProvider>
         <Formik
             initialValues={{ message: "Hola, te contacto por..." }}
             validate={values => {
@@ -71,7 +73,7 @@ function AppForm() {
                         </div>
                         </Spacer>
 
-                        <button type="submit" disabled={isSubmitting} >
+                        <button type="submit" disabled={isSubmitting} className="button">
                             {isSubmitting ? "Enviando..." : "Enviar mensaje"}
                         </button>
 
@@ -82,6 +84,7 @@ function AppForm() {
 
 
         </Formik>
+        </ChakraProvider>
     )
 }
 
